@@ -205,12 +205,12 @@ article#novel table.t-rd:last-child tbody tr:last-child td {
   border-bottom: 2px dashed;
 }
 
-article#novel [class^="fx"] {
+article#novel [class*="fx"] {
   align-items: center;
   display: flex;
 }
 
-article#novel [class^="fx-l"] {
+article#novel [class*="fx-l"] {
   flex-wrap: wrap;
   list-style: none;
 
@@ -330,47 +330,47 @@ article#novel .cd-stats > *:last-child > *:first-child {
   max-width: 100%;
 }
 
-article#novel [class^="s4"]:not(.s4-genres-tags) {
+article#novel [class*="s4"]:not(.s4-genres-tags) {
   border-radius: 5px;
   background-color: var(--clr-bg-primary);
   padding: var(--pdg-md);
 }
 
-article#novel [class^="s4"]:not(.s4-genres-tags) .fx-l {
+article#novel [class*="s4"]:not(.s4-genres-tags) .fx-l {
   border-radius: 5px;
   background-color: var(--clr-bg-secondary);
   padding: var(--pdg-md);
 }
 
-article#novel [class^="s3"]:not(:last-child) {
+article#novel [class*="s3"]:not(:last-child) {
   margin-bottom: var(--spc-md);
 }
 
-article#novel [class^="s3"] > header,
-article#novel [class^="s3"] > h3 {
+article#novel [class*="s3"] > header,
+article#novel [class*="s3"] > h3 {
   margin-bottom: var(--spc-md-s);
 }
 
-article#novel [class^="s3"] h3 {
+article#novel [class*="s3"] h3 {
   font-size: var(--fs-lg);
 }
 
 article#novel
-  [class^="s4"]:not(.s4-genres-tags):not([aria-labelledby="s4-authors"]):not(
+  [class*="s4"]:not(.s4-genres-tags):not([aria-labelledby="s4-authors"]):not(
     :last-child
   ) {
   margin-bottom: var(--spc-sm-s);
 }
 
-article#novel [class^="s4"] > header,
-article#novel [class^="s4"] > h4 {
+article#novel [class*="s4"] > header,
+article#novel [class*="s4"] > h4 {
   border-bottom: 1px solid var(--clr-white);
 
   margin-bottom: calc(var(--spc-sm) / 2);
   padding-bottom: calc(var(--spc-sm) / 2);
 }
 
-article#novel [class^="s4"] h4 svg {
+article#novel [class*="s4"] h4 svg {
   margin-left: 2px;
 }
 
