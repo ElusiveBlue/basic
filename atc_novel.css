@@ -1,0 +1,214 @@
+article#novel {
+  color: var(--clr-white);
+  font-size: var(--fs-md);
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+article#novel > header,
+article#novel #nv-description {
+  margin-bottom: var(--spc-md-s);
+}
+
+article#novel #nv-title {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--spc-sm-s);
+}
+
+article#novel #nv-description {
+  font-size: var(--fs-sm);
+}
+
+article#novel #nv-description > i::before,
+article#novel #nv-description > i::after {
+  content: '"';
+  display: inline-block;
+}
+
+article#novel #card {
+  background-color: var(--clr-bg-primary);
+
+  border-radius: 5px;
+  gap: calc(var(--spc-sm-s) * 1.5);
+  grid-template-columns: minmax(0, 0.35fr) minmax(0, 0.65fr);
+  margin-bottom: var(--spc-md-s);
+  padding: calc(var(--pdg-md) * 1.5);
+}
+
+article#novel #card > div {
+  position: relative;
+}
+
+article#novel #s3-card {
+  border-bottom: 2px dashed var(--clr-white);
+
+  font-size: var(--fs-md);
+  margin-bottom: var(--spc-sm-s);
+  padding-bottom: var(--spc-sm-s);
+}
+
+article#novel #nv-words {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+}
+
+article#novel [aria-labelledby="s3-stats"] > .gd-triple {
+  gap: 0.25rem;
+}
+
+article#novel #s3-stats {
+  font-size: var(--fs-md);
+  margin-bottom: var(--spc-sm);
+}
+
+article#novel #s3-stats > .passive {
+  font-weight: 400;
+}
+
+article#novel #nv-synopsis {
+  margin-bottom: var(--spc-md-s);
+}
+article#novel #nv-notice > *,
+article#novel #nv-synopsis > *:not(:last-child) {
+  display: block;
+  margin-bottom: var(--fs-md);
+}
+
+article#novel #synopsis > *:last-child {
+  margin-bottom: var(--spc-md);
+}
+
+article#novel .s4-genres-tags {
+  margin-bottom: calc(var(--spc-md) + (var(--fs-sm) - 0.4rem));
+}
+
+article#novel .s4-genres-tags > header {
+  border-bottom: none;
+
+  margin-bottom: var(--spc-sm-s);
+}
+
+article#novel ul#nv-genres a::before {
+  content: "# ";
+}
+
+article#novel ul#nv-tags li::before {
+  color: var(--clr-grey);
+}
+
+article#novel [aria-labelledby="s4-fandom"] > ul {
+  background-color: var(--clr-bg-secondary);
+  padding: var(--pdg-md) var(--pdg-md) calc((var(--pdg-md) * 4) - var(--pdg-sm));
+}
+
+article#novel #nv-names li::before,
+article#novel #nv-authors li::before {
+  content: "・";
+  color: var(--clr-white);
+}
+
+article#novel .s4[aria-labelledby="s4-authors"] {
+  margin-bottom: var(--spc-md);
+}
+
+article#novel #nv-authors {
+  margin-bottom: var(--spc-sm-s);
+}
+
+article#novel [aria-labelledby="s4-coo"] > ul {
+  background-color: var(--clr-bg-secondary);
+  padding: var(--pdg-md);
+}
+
+article#novel #s4-sources {
+  position: relative;
+
+  padding-top: 2px;
+}
+
+article#novel #s4-sources ~ * {
+  background-color: var(--clr-bg-primary);
+
+  padding: calc(var(--pdg-md) * 2) var(--pdg-md) var(--pdg-md);
+}
+
+article#novel #s4-sources button {
+  background: none;
+  border: none;
+
+  border-radius: 0;
+}
+
+article#novel #s4-sources button:hover,
+article#novel #s4-sources button.active {
+  background-color: var(--clr-bg-primary);
+}
+
+article#novel #s4-sources > .indicator {
+  display: block;
+  position: absolute;
+
+  border-bottom: 2px solid;
+  transition: margin 0.25s ease-in-out;
+
+  top: 0;
+  width: calc(100% / 3);
+}
+
+article#novel #s4-sources > button:last-of-type.active ~ .indicator {
+  margin-left: calc((100% / 3) * 2);
+}
+
+article#novel #s4-sources > button:nth-of-type(2).active ~ .indicator {
+  margin-left: calc(100% / 3);
+}
+
+article#novel #s4-sources > button:first-of-type.active ~ .indicator {
+  margin-left: 0;
+}
+
+article#novel #s4-sources > button:last-of-type:hover ~ .indicator {
+  margin-left: calc((100% / 3) * 2);
+}
+
+article#novel #s4-sources > button:nth-of-type(2):hover ~ .indicator {
+  margin-left: calc(100% / 3);
+}
+
+article#novel #s4-sources > button:first-of-type:hover ~ .indicator {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 520px) {
+  article#novel #nv-words {
+    position: relative;
+    margin-top: var(--spc-sm-s);
+  }
+
+  article#novel [aria-labelledby="s3-stats"] {
+    position: relative;
+
+    margin-top: calc(-9rem - (var(--pdg-md) * 1.5));
+    padding-left: calc(35% + (var(--spc-sm-s) * 1.5) - (var(--pdg-md) * 1.5));
+    padding-right: calc(var(--pdg-md) * 1.5);
+    z-index: 1;
+  }
+
+  article#novel #s3-stats {
+    margin-bottom: var(--spc-sm-s);
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  article#novel [aria-labelledby="s3-stats"].s3 {
+    margin-bottom: calc(var(--spc-md) * 1.5);
+    margin-top: calc(-10.75rem - (var(--pdg-md) * 1.5));
+  }
+
+  article#novel #nv-words {
+    position: relative;
+    margin-top: calc(var(--spc-sm-s) - 0.25rem);
+  }
+}
