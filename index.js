@@ -1,4 +1,4 @@
-const atcNovel = document.querySelector("article#novel");
+const atcNovel = document.getElementById("novel");
 
 function mchSwap() {
   const pckSwap = atcNovel.querySelectorAll(`[id^="swapbtn"]`);
@@ -100,15 +100,13 @@ function mchPck() {
   for (let idx = 0; idx < pckSrOnly.length; idx++) {
     const eltIA = pckSrOnly[idx];
 
-    eltIA.classList.add("sr-only");
-    eltIA.classList.remove("pck-sr-only");
+    eltIA.classList.replace("pck-sr-only", "sr-only");
   }
 
   for (let idx = 0; idx < pckItem.length; idx++) {
     const eltIA = pckItem[idx];
 
-    eltIA.classList.add("item");
-    eltIA.classList.remove("pck-item");
+    eltIA.classList.replace("pck-item", "item");
   }
 }
 
