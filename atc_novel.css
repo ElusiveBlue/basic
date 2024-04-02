@@ -54,6 +54,11 @@ article#novel #nv-words {
   left: 0;
 }
 
+article#novel [aria-labelledby="s3-stats"] *,
+article#novel #card * {
+  line-height: 1.2;
+}
+
 article#novel [aria-labelledby="s3-stats"] > .gd-triple {
   gap: 0.25rem;
 }
