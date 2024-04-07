@@ -219,7 +219,7 @@ html {
   list-style: none;
 
   font-size: var(--fs-sm);
-  gap: calc(var(--pdg-md));
+  gap: calc(var(--pdg-md) * 1.5);
 }
 
 .ct-item .fx-l li {
