@@ -169,7 +169,6 @@ html {
 
   border-radius: 0;
   width: 100%;
-  padding: var(--pdg-sm) 2px;
 }
 
 .ct-item table.t-rd thead th {
@@ -184,8 +183,9 @@ html {
   background-color: var(--clr-bg-primary);
 }
 
-.ct-item table th,
-.ct-item table td {
+.ct-item table.t-rd caption button
+.ct-item table.t-rd th,
+.ct-item table.t-rd td{
   padding: var(--pdg-md) var(--pdg-sm);
 }
 
