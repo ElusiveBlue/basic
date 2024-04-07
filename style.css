@@ -183,7 +183,7 @@ html {
   background-color: var(--clr-bg-primary);
 }
 
-.ct-item table.t-rd caption button
+.ct-item table.t-rd caption button,
 .ct-item table.t-rd th,
 .ct-item table.t-rd td{
   padding: var(--pdg-md) var(--pdg-sm);
