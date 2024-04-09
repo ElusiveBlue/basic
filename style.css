@@ -363,6 +363,7 @@ html {
 }
 
 .ct-item [class*="s3"] h3 {
+  color: var(--clr-white);
   font-size: var(--fs-lg);
 }
 
